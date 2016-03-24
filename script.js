@@ -1,5 +1,12 @@
 //document.getElementById('s3').style.width = '50%';
 
+var timesClicked = Math.ceil(9*Math.random()); //genereerd een random waarde van hoeveel keer geklikt op het moment dat de pagina laadt
+var clickedTotal = timesClicked*Math.random()*5;
+
+var executeAmount = document.getElementById('amount'); //waarde van executeamount word uit de html gehaald en in de variabele gestopt.
+
+var executeRating = document.getElementById('rating');//waarde van executerating word uit de html gehaald en in de variabele gestopt.
+
 function filledStar(specificStar, percent){ //functie die een specifiek ster opvult
 
 	var name = 's' + specificStar; //variabele naam = ster plus de nummer van een van de sterren
@@ -26,3 +33,10 @@ rating --; //hier word er wat vanaf gehaald dus als er lager gestemt word gaat d
 }
 
 fillingUpTheStars(0.3) //hier roep je de functie aan op alle sterren op te vullen met de waarde waarmee je ze op wilt vullen
+
+
+// random genereren en uitvoeren in dom:
+
+executeAmount.innerHTML = timesClicked; //voert daadwerkelijk de aantalkeren geklikt uit
+executeRating.innerHTML = Math.ceil(10*clickedTotal/timesClicked)/10; //voert daadwerkelijk de hele waardering uit, rondt af, en deelt door 10.
+fillingUpTheStars(Math.ceil(10*clickedTotal/timesClicked)/10);
