@@ -1,0 +1,30 @@
+body {
+
+font-family: sans-serif;
+
+
+}
+
+.stars{
+display: inline-block;
+width: 32px;
+height: 32px;
+background-image: url(http://bla.hosts.ma-cloud.nl/wp-content/uploads/2015/02/grijzeSter.png);
+
+
+}
+
+.stars:hover{
+background-image: url(images/hoverSter.png);
+cursor: pointer;
+
+
+}
+
+.stars span{
+display: inline-block;
+width: 0px;
+height: 32px;
+background-image: url(http://bla.hosts.ma-cloud.nl/wp-content/uploads/2015/02/geleSter.png);
+
+}
