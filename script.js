@@ -1,3 +1,6 @@
+window.onload = function(){
+   
+
 //document.getElementById('s3').style.width = '50%';
 
 var timesClicked = Math.ceil(9*Math.random()); //genereerd een random waarde van hoeveel keer geklikt op het moment dat de pagina laadt
@@ -61,4 +64,5 @@ for(var i=0; i<theStarz.length; i++){ //deze forloop zorgt ervoor dat elke keer 
 
 theStarz[i].addEventListener('click', processClick); //een onclick eventlistener voor de sterren.
 
+}
 }
